@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: service-a
+  name: service-c
 spec:
   revisionHistoryLimit: 2
   replicas: 1
   selector:
     matchLabels:
-      app: service-a
+      app: service-c
   template:
     metadata:
       labels:
-        app: service-a
+        app: service-c
     spec:
       containers:
-      - name: service-a
-        image: asia-south1-docker.pkg.dev/gitops-self-healing-487407/docker-repo/service-a:v3
+      - name: service-c
+        image: asia-south1-docker.pkg.dev/gitops-self-healing-487407/docker-repo/service-c:v3
         ports:
         - containerPort: 5000
         livenessProbe:
