@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: service-c
-        image: asia-south1-docker.pkg.dev/gitops-self-healing-487407/docker-repo/service-c:v3
+        image: asia-south1-docker.pkg.dev/gitops-self-healing-487407/docker-repo/service-c:v4
         ports:
         - containerPort: 5000
         livenessProbe:
