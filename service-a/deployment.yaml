@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: service-a
-        image: asia-south1-docker.pkg.dev/gitops-self-healing/docker-repo/service-a:v1
+        image: asia-south1-docker.pkg.dev/gitops-self-healing-487407/docker-repo/service-a:v1
         ports:
         - containerPort: 8080
         livenessProbe:
